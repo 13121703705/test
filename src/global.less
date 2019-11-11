@@ -1,0 +1,70 @@
+@import '~antd/es/style/themes/default.less';
+
+:global{
+  .ant-layout-sider{
+    background: #0B4D7F;
+  }
+
+  .ant-pro-sider-menu-logo {
+    background: #0B4D7F;
+  }
+
+  .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background: #0B4D7F;
+  }
+
+  .ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+    background: #0B4D7F;
+  }
+
+  .ant-upload.ant-upload-select-picture-card {
+    width: 135px;
+    height: 135px;
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
